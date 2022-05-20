@@ -1,0 +1,63 @@
+:root{
+    --primarycolor: gold;
+    --secondarycolor: black;
+    --thirdcolor: orange;
+    --fourthcolor: whitesmoke;
+    --bonuscolor: red;
+}
+
+.flex_right .up{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:10%;
+    border-radius: 25px;
+    background-color: var(--fourthcolor);
+    text-align: center;
+    margin: 2%;
+    padding: 25px;
+}
+.flex_right .up p{
+    font-size: 1.5em;
+}
+
+
+.flex_right .up form{
+ 
+    align-items: center;
+    height: 30%;
+}
+.flex_right .up input{
+    border-radius: 25px;
+    background-color: var(--primarycolor);
+
+}
+
+.flex_right .up input:focus{
+    background-color: var(--thirdcolor);
+}
+
+.flex_right .up #tasto{
+    background-color: var(--secondarycolor);
+    color: var(--fourthcolor);
+
+}
+
+.flex_right .up #tasto:hover{
+    background-color: var(--thirdcolor);
+    color: var(--secondarycolor);
+}
+
+.flex_right .bottom {
+    border-radius: 25px;
+    background-color: var(--fourthcolor);
+    display: flex;
+    flex-direction: column;
+    margin: 2%;    
+    
+}
+
+.flex_right .bottom img{
+    margin: 2%;
+    border-radius: 25px;
+}

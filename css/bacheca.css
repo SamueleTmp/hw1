@@ -1,0 +1,87 @@
+:root{
+    --primarycolor: gold;
+    --secondarycolor: black;
+    --thirdcolor: orange;
+    --fourthcolor: whitesmoke;
+    --bonuscolor: red;
+}
+
+.bacheca{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    margin: 2%;
+}
+
+.bacheca .post{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 2%;
+
+    background-color: var(--fourthcolor);
+    border-radius: 25px;
+    border: 3px solid var(--thirdcolor)
+}
+
+.bacheca .post .post_left{
+    display:  flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin: 2%;
+}
+
+.bacheca .post .post_left h1{
+    font-size: 2em;
+    margin: 1%;
+}
+
+.bacheca .post .post_left p{
+    font-size: 2em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin: 1%;
+}
+
+.bacheca .post .post_left img{
+    width: 60px;
+    height: 50px;
+}
+
+.bacheca .post .post_left button{
+    padding: 10px;
+    border-radius: 25px;
+    background-color: var(--secondarycolor);
+    color: var(--fourthcolor);
+}
+
+.bacheca .post .post_left button:hover{
+    background-color: var(--thirdcolor);
+    color: var(--secondarycolor);
+}
+
+
+
+.bacheca .post .post_right{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+
+}
+
+.bacheca .post .post_right img{
+   
+    
+    width: 100%;
+    height: 90%;
+    margin: 1%;
+    border-radius: 25px;
+}
+

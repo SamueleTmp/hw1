@@ -1,0 +1,132 @@
+:root{
+    --primarycolor: gold;
+    --secondarycolor: black;
+    --thirdcolor: orange;
+    --fourthcolor: whitesmoke;
+    --errorcolor: red;
+}
+
+body{
+    height: 100em;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    background-color: var(--secondarycolor);
+}
+
+.login_container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: auto;
+    height: 40%;
+}
+
+.login_container .left{
+    width: 40%;
+    height: auto;
+}
+
+.login_container .left img{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
+
+.login_container .right{
+    width:50%;
+    position:relative;
+    left: -5%;
+
+    border-top-right-radius: 25px ;
+    border-bottom-right-radius: 25px;
+    background-color: var(--fourthcolor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.login_container .right form{
+    width: 100%;
+    height: auto;
+
+    font-size: 1.5em;
+
+    display: flex;
+    
+    align-items: center;
+    flex-direction: column;
+
+    line-height: 2em;
+
+}
+
+.login_container .right form div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login_container .right form div label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20rem;
+    margin: 30px;
+}
+
+.login_container .right form div label input{
+    
+    margin-left: 5px;
+    background-color: var(--primarycolor);
+}
+
+.login_container .right form div a{
+    text-decoration: none;
+    color:var(--primarycolor);
+}
+
+.login_container .right form div a:hover{
+    color: var(--thirdcolor);
+
+}
+
+.login_container .right form div label input:focus{
+    background-color: var(--thirdcolor);
+    border-radius: 10px;
+}
+
+#invio input{
+
+    size: 3em;
+    border-radius: 10px;
+    padding: 10px;
+    background-color:var(--secondarycolor);
+    color: var(--primarycolor);
+
+}
+
+#welcome{
+    font-size: 2em;
+}
+
+.error{
+    color: var(--errorcolor);
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+

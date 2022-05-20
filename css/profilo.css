@@ -1,0 +1,232 @@
+:root{
+    --primarycolor: gold;
+    --secondarycolor: black;
+    --thirdcolor: orange;
+    --fourthcolor: whitesmoke;
+    --bonuscolor: red;
+}
+
+body{
+    margin: 0px;
+    background: url("https://p.favim.com/orig/2019/02/19/wallpaper-popcorn-cinema-Favim.com-6930901.jpg");
+    background-position: center;
+    height: 100%;
+}
+
+header{
+    background-color: var(--secondarycolor);
+    width: 100%;
+}
+
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1{
+    font-weight:bold ;
+    font-style:italic ;
+    font-size: 4em;
+    color:var(--fourthcolor);
+    
+    text-align: center;
+    margin: auto;
+}
+
+
+nav a{
+    text-decoration: none;
+    cursor: pointer;
+    border: solid 5px var(--fourthcolor);
+    color: var(--fourthcolor);
+    border-radius: 25px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    
+}
+
+nav a:hover{
+    background-color: var(--thirdcolor);
+    color: var(--secondarycolor);
+    border: solid 5px var(--primarycolor);
+    
+}
+
+
+
+/*#menutendina{
+    display: none;
+}*/
+
+/*#menutendina div{
+    background-color: var(--primary-color);
+    height: 8px;
+    
+    width: 40px;
+    margin: 5px;
+}*/
+
+article{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.flex_container{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 2%;
+}
+
+
+/*Tutta la parte grafica per il flex_left*/
+.flex_left{
+    display: flex;
+    flex-direction: row;
+    margin: 1%;
+    width: 100%;
+    
+
+}
+
+.flex_left .up{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1%;
+    margin-bottom: 25px;
+    background-color: var(--fourthcolor);
+    border-radius: 25px;
+    
+
+    width: 100%;
+}
+
+.flex_left .up .div_pic_profile{
+    width: 20%;
+    align-items: center;
+}
+
+.flex_left .up .username{
+    width: 70%;
+    font-size: 4em;
+    text-align: center;
+}
+
+.flex_left .up img{
+    border: solid 3px var(--thirdcolor);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 1%;
+}
+
+/*.flex_left .up h1{
+    font-size: 3em;
+}
+
+.flex_left .up p{
+    font-size: 2.5em;
+}
+
+.flex_left .up p a{
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 10px;
+    border:5px solid var(--secondarycolor);
+    color: var(--secondarycolor);
+}
+
+.flex_left .up div{
+    font-size: 1.5em;
+}
+
+.flex_left .up .decoration {
+    width: 95%;
+    border-radius: 25px;
+    height: 10px;
+    background-color: var(--secondarycolor);
+}*/
+
+
+
+/*Tutta la parte grafica per il flex_center*/
+.flex_center{
+    
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    
+
+    margin:1%;
+    width: 100%;
+}
+
+/*.flex_center .creazione{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2%;
+}
+
+.flex_center .creazione form{
+    width: 100%;
+}
+
+.flex_center .creazione  form textarea{
+    resize: none;
+    width: 99%;
+}
+
+.flex_center .creazione form div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex_center .creazione form div .left{
+    width: 70%;
+}
+
+.flex_center .creazione form div .right{
+    width: 30%;
+}
+*/
+
+/*Tutta la parte grafica per il flex_right*/
+.flex_right{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+    background-color: var(--bonuscolor);
+    margin: 1%;
+    width: 40%;
+}
+
+
+
+
+
+
+footer{
+    height: 40px;
+    background-color: var(--secondarycolor);
+    text-align: center;
+    font-weight:normal ;
+    font-style:normal ;
+    font-size: 2em;
+    color: var(--fourthcolor);
+    line-height:normal;
+    
+}
