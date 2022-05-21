@@ -16,7 +16,7 @@ body{
     background-color: var(--secondarycolor);
 }
 
-.login_container{
+.register_container{
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -24,18 +24,18 @@ body{
     height: 40%;
 }
 
-.login_container .left{
+.register_container .left{
     width: 40%;
     height: auto;
 }
 
-.login_container .left img{
+.register_container .left img{
     width: 100%;
     height: 100%;
     border-radius: 25px;
 }
 
-.login_container .right{
+.register_container .right{
     width:50%;
     position:relative;
     left: -5%;
@@ -49,7 +49,7 @@ body{
 }
 
 
-.login_container .right form{
+.register_container .right form{
     width: 100%;
     height: 100%;
 
@@ -64,7 +64,7 @@ body{
 
 }
 
-.login_container .right form div{
+.register_container .right form div{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -73,7 +73,7 @@ body{
 
 }
 
-.login_container .right form div label{
+.register_container .right form div label{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -81,22 +81,22 @@ body{
     margin: 30px;
 }
 
-.login_container .right form div label input{
+.register_container .right form div label input{
     margin-left: 5px;
     background-color: var(--primarycolor);
 }
 
-.login_container .right form div a{
+.register_container .right form div a{
     text-decoration: none;
     color:var(--primarycolor);
 }
 
-.login_container .right form div a:hover{
+.register_container .right form div a:hover{
     color: var(--thirdcolor);
 
 }
 
-.login_container .right form div label input:focus{
+.register_container .right form div label input:focus{
     background-color: var(--thirdcolor);
     border-radius: 10px;
 }
@@ -120,4 +120,119 @@ body{
 .error{
     color: var(--errorcolor);
     
+}
+
+@media (max-width: 1500px)
+{
+    .register_container{
+
+        align-items: center;
+        flex-direction:column;
+        width: 90%;
+        height: 90%;
+    }
+    
+    .register_container .left{
+        width: 90%;
+        height: 80%;
+    }
+    
+    
+    .register_container .right{
+        width:90%;
+        top: -5%;
+        left: 0%;
+        height: 100%;
+        border-top-right-radius: 0px ;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        
+    }
+    
+    
+    .register_container .right form{
+       
+        height: 100%;
+        line-height: 1.5em;
+        
+    }
+    
+    
+    
+}
+@media (max-width: 1000px)
+{
+    .register_container .right form div{
+        flex-direction: column;
+        justify-content: unset;
+    }
+    
+}
+
+
+@media (max-width: 700px)
+{
+    .register_container{
+
+        height: 60%;
+    }
+    
+    .register_container .left{
+        width: 90%;
+        height: 60%;
+    }
+    
+    #welcome{
+        font-size: 1.5em;
+    }
+    
+    .register_container .right form{
+        font-size: 1.2em;
+    }
+    
+    
+    
+}
+
+
+@media (max-width: 500px)
+{
+
+    
+    .register_container .right form{
+        
+        font-size: 1.2em; 
+    }
+    
+    .register_container .right form div{
+        justify-content: unset;
+        
+    }
+    
+}
+
+@media (max-width: 400px)
+{
+    .register_container{
+        width: 98%;
+    }
+
+    .register_container .left{
+        height: 50%;
+    }
+
+    .register_container .right form{        
+         font-size: 1em;
+    }
+    
+    .register_container .right form div{
+        justify-content: unset;
+        
+    }
+    
+    .register_container .right form div label{
+        width: 15rem;
+        
+    }
 }

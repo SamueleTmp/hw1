@@ -149,7 +149,7 @@
 <html>
     <head>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <title>REGISTRAZIONE</title>
 
@@ -160,7 +160,7 @@
 
     <body>
 
-            <div class="login_container">
+            <div class="register_container">
                 <div class="left">
                     <img src="https://cdn.pixabay.com/photo/2017/11/24/10/43/ticket-2974645_960_720.jpg" alt="immagine_login">
                 </div>

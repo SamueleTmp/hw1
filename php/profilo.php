@@ -1,3 +1,16 @@
+<?php
+    session_start();
+
+    //verifico se l'utente è loggato
+    if(!isset($_SESSION['username']))
+    {
+        //Nel caso in cui non fosse loggato vado nella paggina di login
+        header("Location: login.php");
+        exit;
+    }
+
+?>
+
 <!DOCTYPE html>
 <html>
     <head>

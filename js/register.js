@@ -33,3 +33,4 @@ function check(event)
 //aggiungiamo l'event listener al form
 const form = document.forms['register_form'];
 form.addEventListener('submit', check);
+

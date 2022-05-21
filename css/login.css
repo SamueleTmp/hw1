@@ -120,12 +120,116 @@ body{
 }
 
 
+@media (max-width: 1200px)
+{
+    .login_container{
+
+        align-items: center;
+        flex-direction:column;
+        width: 90%;
+        height: 70%;
+    }
+    
+    .login_container .left{
+        width: 90%;
+        height: 60%;
+    }
+    
+    
+    .login_container .right{
+        width:90%;
+        top: -5%;
+        left: 0%;
+        height: 100%;
+        border-top-right-radius: 0px ;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        
+    }
+    
+    
+    .login_container .right form{
+       
+        height: 100%;
+        line-height: 1.5em;
+        
+    }
+    
+    
+    
+}
 
 
+@media (max-width: 700px)
+{
+    .login_container{
+
+        height: 60%;
+    }
+    
+    .login_container .left{
+        width: 90%;
+        height: 60%;
+    }
+    
+    #welcome{
+        font-size: 1.5em;
+    }
+    
+    .login_container .right form{
+        font-size: 1.2em;
+    }
+    
+    
+    
+}
 
 
+@media (max-width: 500px)
+{
 
+    
+    .login_container .right form{
+        
+        font-size: 1.2em; 
+    }
+    
+    .login_container .right form div{
+        justify-content: unset;
+        
+    }
+    
+    .login_container .right form div label{
+        justify-content: center;
+        width: 15rem;
+        
+    }
+}
 
+@media (max-width: 400px)
+{
+
+    .login_container .left{
+        height: 50%;
+    }
+
+    .login_container .right form{
+        
+         font-size: 1em;
+    }
+    
+    .login_container .right form div{
+        justify-content: unset;
+        
+    }
+    
+    .login_container .right form div label{
+        justify-content: center;
+        width: 15rem;
+        
+    }
+}
 
 
 

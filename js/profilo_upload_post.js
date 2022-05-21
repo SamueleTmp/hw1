@@ -92,7 +92,7 @@ function onJSON_upload_post(json){
     title.textContent = post.titolo;
     poster.src = post.url_poster;
     year.textContent = "Anno: " + post.anno;
-    runtime.textContent = "Durata: " + post.durata + " min";
+    runtime.textContent = "Durata: " + post.durata;
 
     div.setAttribute("data-id", post.id);
 
