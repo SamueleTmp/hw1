@@ -429,3 +429,26 @@ footer{
     
     
 }
+
+@media (max-width: 700px)
+{
+    nav h1{
+        font-size: 2em;
+    }
+   
+    footer{
+        font-size: 1.5em;
+    }
+
+    .flex_left .up div{
+        display: none;
+    }
+}
+
+
+@media (max-width: 500px)
+{
+    footer{
+        font-size: 1em;
+    }
+}

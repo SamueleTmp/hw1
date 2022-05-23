@@ -98,6 +98,9 @@ body{
     font-size: 0.6em;
     color: red;
     padding: 0px;
+    margin: 1px;
+    text-align: right;
+
 }
 
 .register_container .right form div a{
@@ -201,6 +204,10 @@ body{
         font-size: 1.5em;
     }
     
+    .register_container .right{
+        height: 100%;
+    }
+
     .register_container .right form{
         font-size: 1.2em;
     }

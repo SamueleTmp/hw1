@@ -229,3 +229,33 @@ footer{
     line-height:normal;
     
 }
+
+
+@media (max-width: 1000px)
+{
+    footer{
+        font-size: 1.5em;
+    }
+}
+
+
+@media (max-width: 600px)
+{
+
+    .flex_left .up .username{
+        font-size: 2em;
+    }
+
+    .flex_left .up .div_pic_profile img{
+        width: 150px;
+        height: 150px;
+    }
+
+    footer{
+        font-size: 1em;
+    }
+
+    nav h1{
+        font-size: 2em;
+    }
+}
