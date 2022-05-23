@@ -169,18 +169,18 @@
                     <form action="" name="register_form" method="post" enctype="multipart/form-data">
                         <p id="welcome">Registrazione</p>
                         <div>
-                            <label>Nome<input type="text" name="nome"></label>
-                            <label>Cognome<input type="text" name="cognome"></label>
+                            <label>Nome<input type="text" name="nome"> <p class="hidden_error"></p></label>
+                            <label>Cognome<input type="text" name="cognome"><p class="hidden_error"></p></label>
                         </div>
                         
                         <div>
-                            <label>Username<input type="text" name="username"></label>
-                            <label>Email<input type="text" name="email"></label>
+                            <label>Username<input type="text" name="username"><p class="hidden_error"></p></label>
+                            <label>Email<input type="text" name="email"><p class="hidden_error"></p></label>
                         </div>
                         
                         <div>
-                            <label>Password<input type="password" name="pass"></label>
-                            <label>Conferma Password<input type="password" name="conf_pass"></label>
+                            <label>Password<input type="password" name="pass"><p class="hidden_error"></p></label>
+                            <label>Conferma Password<input type="password" name="conf_pass"><p class="hidden_error"></p></label>
                         </div>
 
                         <div>
@@ -198,7 +198,7 @@
 
                              if(isset($errore))
                              {
-                                 echo "<p class='error'>Hai inserito dati errati/username già usato</p>";
+                                 echo "<p class='error'>Mancano alcuni campi</p>";
                              }
                              
                          ?>

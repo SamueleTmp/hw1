@@ -75,6 +75,7 @@ body{
 
 .register_container .right form div label{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     width: 20rem;
@@ -84,6 +85,19 @@ body{
 .register_container .right form div label input{
     margin-left: 5px;
     background-color: var(--primarycolor);
+}
+
+
+
+.hidden_error{
+    display: none;
+}
+
+.check_error{
+    display: block;
+    font-size: 0.6em;
+    color: red;
+    padding: 0px;
 }
 
 .register_container .right form div a{
