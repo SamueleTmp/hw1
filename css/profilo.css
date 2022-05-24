@@ -58,18 +58,6 @@ nav a:hover{
 
 
 
-/*#menutendina{
-    display: none;
-}*/
-
-/*#menutendina div{
-    background-color: var(--primary-color);
-    height: 8px;
-    
-    width: 40px;
-    margin: 5px;
-}*/
-
 article{
     height: 100vh;
     display: flex;
@@ -130,33 +118,6 @@ article{
     margin: 1%;
 }
 
-/*.flex_left .up h1{
-    font-size: 3em;
-}
-
-.flex_left .up p{
-    font-size: 2.5em;
-}
-
-.flex_left .up p a{
-    text-decoration: none;
-    border-radius: 25px;
-    padding: 10px;
-    border:5px solid var(--secondarycolor);
-    color: var(--secondarycolor);
-}
-
-.flex_left .up div{
-    font-size: 1.5em;
-}
-
-.flex_left .up .decoration {
-    width: 95%;
-    border-radius: 25px;
-    height: 10px;
-    background-color: var(--secondarycolor);
-}*/
-
 
 
 /*Tutta la parte grafica per il flex_center*/
@@ -172,35 +133,6 @@ article{
     width: 100%;
 }
 
-/*.flex_center .creazione{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 2%;
-}
-
-.flex_center .creazione form{
-    width: 100%;
-}
-
-.flex_center .creazione  form textarea{
-    resize: none;
-    width: 99%;
-}
-
-.flex_center .creazione form div{
-    display: flex;
-    justify-content: space-between;
-}
-
-.flex_center .creazione form div .left{
-    width: 70%;
-}
-
-.flex_center .creazione form div .right{
-    width: 30%;
-}
-*/
 
 /*Tutta la parte grafica per il flex_right*/
 .flex_right{
@@ -212,8 +144,6 @@ article{
     margin: 1%;
     width: 40%;
 }
-
-
 
 
 
@@ -230,6 +160,9 @@ footer{
     
 }
 
+
+
+/* Media Query */
 
 @media (max-width: 1000px)
 {

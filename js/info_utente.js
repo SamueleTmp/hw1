@@ -27,8 +27,6 @@ function onJSON_info_utente(json)
     h1.textContent="Bentornato!"
     img.src = "data:image/jpg;charset=utf8;base64," + json['picprofile'];
 
-    //Aggiungo l'event listener alla foto profilo per entrare nella pagina del profilo
-    //img.addEventListener("click", apri_profilo);
     
     p_usr.textContent=json['username'];
     div_post_pubblicati.textContent="Post Pubblicati: "+json['post_pubblicati'];

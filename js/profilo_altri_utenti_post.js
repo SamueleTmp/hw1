@@ -1,24 +1,3 @@
-/*function elimina_post(event)
-{
-    
-    let id_post = event.currentTarget.parentNode.parentNode.dataset.id;
-
-    console.log("elimino il post id: "+ id_post);
-
-    let data = {
-        id: id_post,
-    };
-
-    fetch("elimina_post.php", { 
-        method: "POST",
-        body: JSON.stringify(data),
-        header: {
-            "Content-type": "application/json"
-                }    
-    });
-
-    event.currentTarget.parentNode.parentNode.parentNode.innerHTML="";
-}*/
 
 //Creo le funzioni per gestire il file json
 function onResponse(response)
@@ -51,6 +30,7 @@ function onJSON_upload_post(json){
     {
 
     console.log("ciao");
+
     if(!is_array)
     {
         post=json;
@@ -77,12 +57,6 @@ function onJSON_upload_post(json){
     let div_left = document.createElement("div");
     let div_right = document.createElement("div");
 
-
-    //creo il tasto per eliminare i post 
-  /*  let elimina = document.createElement("button");
-    elimina.textContent="Elimina post";
-    elimina.addEventListener("click", elimina_post);
-*/
     //cerco la bacheca nel flex center della homepage.php
 
     let center = document.querySelector(".flex_center .bacheca");
@@ -136,9 +110,7 @@ function onJSON_upload_post(json){
     div_left.appendChild(like);
     like.appendChild(img_like);
 
-  //  div_left.appendChild(elimina);
     
-
     div_right.appendChild(poster);
 
     div.classList.add("post");
@@ -151,43 +123,6 @@ function onJSON_upload_post(json){
 
 }
 
-//creo la funzione che richiama il file php per eseguire l'api
-/*function crea_post(event){
-
-    if(form.text_area.value.length == 0 || form.nome_film.value.length == 0)
-    {
-        if(form.text_area.value.length == 0)
-            form.text_area.placeholder="Sei di poche parole!";
-        
-        if(form.nome_film.value.length == 0)
-            form.nome_film.placeholder="Tutto bello, ma il nome del film?";
-        event.preventDefault();    
-    }
-    else
-    {
-        event.preventDefault();
-
-        let data = {
-            nome_film: form.nome_film.value,
-            descrizione: form.text_area.value,
-        };
-         
-
-        fetch("OMDBapi.php",
-        {
-            method: "POST",
-            body: JSON.stringify(data),
-            header: {
-                "Content-type": "application/json"
-                    }
-
-        }).then(onResponse).then(onJSON_upload_post);
-    }
-
-
-
-}
-*/
 function unliked(event)
 {
     let p = event.currentTarget.parentNode;
@@ -251,20 +186,6 @@ function liked(event)
     });
 }
 
-
-//Aggiungo l'event listener al submit per la creazione dei post
-
-//const form = document.forms['creazione_form'];
-//form.addEventListener('submit', crea_post);
-
-//aggiun l'event listener per la funzione like
-//const like = document.querySelectorAll(".bacheca .post .post_left p img");
-
-/*for(let i=0; i<like.length; i++)
-{
-    like[i].addEventListener('click', liked);
-}
-*/
 
 //Upload_post in bacheca
 fetch("../php/upload_post_profilo_altri_utenti.php").then(onResponse).then(onJSON_upload_post);

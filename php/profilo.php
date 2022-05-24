@@ -51,23 +51,7 @@
                 
                 <div class="flex_center">
 
-                  <!--  <div class="creazione">
-                        <form action="OMDBapi.php" name="creazione_form" method="post">
-
-                            <textarea name="text_area" id="" cols="30" rows="10" placeholder="Dicci cosa ne pensi di..."></textarea>
-                        
-                            
-                            
-                            <div>
-                                <input type="text" name="nome_film" placeholder="Cerca il nome del film" class="left">
-                                <input type="submit" name="create" value="Creapost" class="right">
-                            </div>
-                            
-                        </form>
-                        
-                    </div>
-
-                    -->
+                  
                     <div class="bacheca">
 
                     

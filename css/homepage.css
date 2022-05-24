@@ -58,24 +58,6 @@ nav a:hover{
 }
 
 
-
-
-
-
-
-/*#menutendina{
-    display: none;
-}*/
-
-/*#menutendina div{
-    background-color: var(--primary-color);
-    height: 8px;
-    
-    width: 40px;
-    margin: 5px;
-}*/
-
-
 article{
     height: 100vh;
     display: flex;
@@ -317,6 +299,7 @@ footer{
     
 }
 
+/* Media Query */
 
 @media (max-width: 1500px)
 {
@@ -429,6 +412,8 @@ footer{
     
     
 }
+
+
 
 @media (max-width: 700px)
 {

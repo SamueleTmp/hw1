@@ -13,7 +13,6 @@ function onJSON_cerca_film(json)
     {
         let div_box = document.createElement("div");
         div_box.classList.add("bottom");
-        //let title = document.createElement("p");
         let poster = document.createElement("img");
         let anno = document.createElement("p");
         let durata = document.createElement("p");
@@ -27,7 +26,6 @@ function onJSON_cerca_film(json)
         //Inserisco il contenuto
         poster.src=json.Poster;
 
-        //title.innerText = "Titolo:\n" + json.Title;
         anno.innerText = "Anno:\n" + json.Year;
         durata.innerText = "Durata:\n" + json.Runtime;
         regista.innerText = "Regista:\n" + json.Director;
@@ -42,7 +40,6 @@ function onJSON_cerca_film(json)
         //appendo gli elementi
 
         right.appendChild(div_box);
-        //div_box.appendChild(title);
         div_box.appendChild(poster);
         div_box.appendChild(anno);
         div_box.appendChild(durata);

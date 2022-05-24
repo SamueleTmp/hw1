@@ -56,6 +56,12 @@
     $array['post_pubblicati']=$post_pubblicati[0];
     $array['like_ricevuti']=$like_ricevuti[0];
     $array['like_fatti']=$like_fatti[0];
+
+   
+
+
+    mysqli_close($conn);
+   
      
     echo json_encode($array);
  }

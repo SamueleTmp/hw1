@@ -30,5 +30,9 @@
     $array['picprofile']=$final_picprofile;
     $array['username']=$usr;
      
+    mysqli_free_result($picprofile);
+    mysqli_close($conn);
+   
+
     echo json_encode($array);
  }

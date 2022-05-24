@@ -241,14 +241,5 @@ function liked(event)
 const form = document.forms['creazione_form'];
 form.addEventListener('submit', crea_post);
 
-
-//aggiun l'event listener per la funzione like
-//const like = document.querySelectorAll(".bacheca .post .post_left p img");
-
-/*for(let i=0; i<like.length; i++)
-{
-    like[i].addEventListener('click', liked);
-}*/
-
 //Upload_post in bacheca
 fetch("../php/upload_post.php").then(onResponse).then(onJSON_upload_post);

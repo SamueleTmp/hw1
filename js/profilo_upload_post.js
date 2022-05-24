@@ -152,43 +152,7 @@ function onJSON_upload_post(json){
 
 }
 
-//creo la funzione che richiama il file php per eseguire l'api
-/*function crea_post(event){
 
-    if(form.text_area.value.length == 0 || form.nome_film.value.length == 0)
-    {
-        if(form.text_area.value.length == 0)
-            form.text_area.placeholder="Sei di poche parole!";
-        
-        if(form.nome_film.value.length == 0)
-            form.nome_film.placeholder="Tutto bello, ma il nome del film?";
-        event.preventDefault();    
-    }
-    else
-    {
-        event.preventDefault();
-
-        let data = {
-            nome_film: form.nome_film.value,
-            descrizione: form.text_area.value,
-        };
-         
-
-        fetch("OMDBapi.php",
-        {
-            method: "POST",
-            body: JSON.stringify(data),
-            header: {
-                "Content-type": "application/json"
-                    }
-
-        }).then(onResponse).then(onJSON_upload_post);
-    }
-
-
-
-}
-*/
 function unliked(event)
 {
     let p = event.currentTarget.parentNode;
@@ -253,19 +217,6 @@ function liked(event)
 }
 
 
-//Aggiungo l'event listener al submit per la creazione dei post
-
-//const form = document.forms['creazione_form'];
-//form.addEventListener('submit', crea_post);
-
-//aggiun l'event listener per la funzione like
-//const like = document.querySelectorAll(".bacheca .post .post_left p img");
-
-/*for(let i=0; i<like.length; i++)
-{
-    like[i].addEventListener('click', liked);
-}
-*/
 
 //Upload_post in bacheca
 fetch("../php/upload_post_profilo.php").then(onResponse).then(onJSON_upload_post);
