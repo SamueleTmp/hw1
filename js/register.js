@@ -7,7 +7,7 @@ function check_nome(event)
         let  p = event.currentTarget.parentNode.querySelector("p");
         p.classList.remove("hidden_error");
         p.classList.add("check_error");
-        p.textContent="Caratteri non validi";
+        p.textContent="Solo Lettere";
         
     }
     else
@@ -28,7 +28,7 @@ function check_cognome(event)
         let  p = event.currentTarget.parentNode.querySelector("p");
         p.classList.remove("hidden_error");
         p.classList.add("check_error");
-        p.textContent="Caratteri non validi";
+        p.textContent="Solo Lettere";
         
     }
     else
@@ -50,7 +50,7 @@ function check_username(event)
         let  p = event.currentTarget.parentNode.querySelector("p");
         p.classList.remove("hidden_error");
         p.classList.add("check_error");
-        p.textContent="Caratteri non validi";
+        p.textContent="Solo lettere/numeri/_";
     }
     else
     {
@@ -114,7 +114,7 @@ function check_email(event)
         let  p = event.currentTarget.parentNode.querySelector("p");
         p.classList.remove("hidden_error");
         p.classList.add("check_error");
-        p.textContent="Caratteri non validi";
+        p.textContent="Formato email non valido";
     }
     else
     {
@@ -133,7 +133,7 @@ function check_pass(event)
         let  p = event.currentTarget.parentNode.querySelector("p");
         p.classList.remove("hidden_error");
         p.classList.add("check_error");
-        p.textContent="Caratteri non validi";
+        p.textContent="1 Maiuscola, 1 Minisciola, 1 numero e almeno 5 caratteri";
     }
     else
     {
@@ -152,7 +152,7 @@ function check_conf_pass(event)
         let  p = event.currentTarget.parentNode.querySelector("p");
         p.classList.remove("hidden_error");
         p.classList.add("check_error");
-        p.textContent="Caratteri non validi";
+        p.textContent="1 Maiuscola, 1 Minisciola, 1 numero e almeno 5 caratteri";
     }
     else
     {
